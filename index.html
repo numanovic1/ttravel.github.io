@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />     
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />    
+<meta name="keywords" content="Potovanje, TTravel, Destinacije>     
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TTravel</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  
+</head>
+<style>
+/* Custom CSS Styles */
+
+/* navbar */
+.navbar {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(to right, white, #ccc, #3454d1);
+}
+
+/* Change the active nav item color */
+.navbar-nav .nav-item.active .nav-link {
+  color: black;
+}
+
+/* Add a shadow and gradient background to the hero section */
+.hero {
+  background: linear-gradient(to right, #2196F3, #42A5F5, #64B5F6);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the hero section text */
+.hero h1 {
+  color: white;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.hero p {
+  color: white;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+/* Style the "Explore Now" button */
+.hero .btn {
+  background-color: white;
+  color: #2196F3;
+  font-size: 1.2rem;
+  padding: 0.75rem 2rem;
+  border-radius: 10px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.hero .btn:hover {
+  background-color:#dfebf5;
+}
+
+/* Add a shadow and border-radius to the content section */
+.container {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 2rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container.gallery {
+  margin-top: 50px;
+}
+
+h2.gallery-heading {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.carousel-indicators {
+  bottom: -40px;
+}
+
+.carousel-indicators li {
+  width: 15px;
+  height: 15px;
+  background-color: #888;
+  border-radius: 50%;
+}
+
+.carousel-indicators .active {
+  background-color: #3454d1;
+}
+
+@media (max-width: 767px) {
+  .carousel-indicators {
+    bottom: -30px;
+  }
+
+  .carousel-indicators li {
+    width: 10px;
+    height: 10px;
+  }
+
+  /* Style the footer text */
+  .footer {
+    color: #888;
+    font-size: 0.9rem;
+    margin-top: 2rem;
+  }
+}
+</style>
+<body>
+
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="index.html">TTravel</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="destinations.html">Destinations</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+		<li class="nav-item">
+		<a class="nav-link" href="tips.html">Tips</a>
+		</li>
+		<li class="nav-item">
+		<a class="nav-link" href="quotes.html">Quotes</a>
+		</li>
+      </ul>
+    </div>
+  </nav>
+
+  <!--Na ozadju -->
+<header class="hero bg-primary text-white text-center py-5" style="background-image: url('svet.jpg'); background-size: cover; background-position: center;">
+  <h1 class="display-4">Explore the world</h1>
+  <p class="lead">Discover amazing destinations and plan your next adventure</p>
+  <a href="destinations.html" class="btn btn-light btn-lg">Explore now!</a>
+</header>
+
+  <!--Uvodno_bes -->
+  <div class="container mt-5">
+    <h2>Welcome to TTravel Explorer!</h2>
+    <p>Plan your dream vacation with us and experience the wonders of the world!</p>
+  </div>
+  
+ <!-- TOP3 -->
+<section id="services" class="bg-light py-5">
+  <div class="container">
+    <h2 class="text-center">Top 3 locations!</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <a href="London.html">
+          <div class="card mb-4">
+            <img src="London.jpg" alt="rentacar" style="width:348px;height:150px;">
+            <div class="card-body">
+              <h5 class="card-title">London.</h5>
+              <p class="card-text">London, the capital of England, captivates visitors with its rich history and vibrant culture. </p>
+              <a href="https://www.booking.com/searchresults.sl.html?ss=London%2C+Greater+London%2C+United+Kingdom&ssne=Rio+de+Janeiro&ssne_untouched=Rio+de+Janeiro&efdco=1&label=gen173nr-1BCAEoggI46AdIM1gEaMsBiAEBmAEjuAEXyAEM2AEB6AEBiAIBqAIDuAKnsKikBsACAdICJGI4NWVhMDhkLTQwYzYtNDIxYS1hNDQ3LWZkYzE2NDBiYWNmZdgCBeACAQ&aid=304142&lang=sl&sb=1&src_elem=sb&src=searchresults&dest_id=-2601889&dest_type=city&ac_position=0&ac_click_type=b&ac_langcode=en&ac_suggestion_list_length=5&search_selected=true&search_pageview_id=95ff8aafaf1b0156&ac_meta=GhA5NWZmOGFhZmFmMWIwMTU2IAAoATICZW46BmxvbmRvbkAASgBQAA%3D%3D&group_adults=1&no_rooms=1&group_children=0" target="_blank" class="btn btn-primary">Visit London</a>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-4">
+        <a href="Dubai.html">
+          <div class="card mb-4">
+            <img src="Dubai.jpg" alt="rentacar" style="width:348px;height:150px;">
+            <div class="card-body">
+              <h5 class="card-title">Dubai</h5>
+              <p class="card-text">Dubai, the jewel of the Middle East, offers a unique blend of modern luxury and traditional charm. </p>
+              <a href="https://www.booking.com/searchresults.sl.html?ss=Dubai%2C+Dubai+Emirate%2C+United+Arab+Emirates&ssne=Barcelona&ssne_untouched=Barcelona&efdco=1&label=gen173nr-1BCAEoggI46AdIM1gEaMsBiAEBmAEjuAEXyAEM2AEB6AEBiAIBqAIDuAKnsKikBsACAdICJGI4NWVhMDhkLTQwYzYtNDIxYS1hNDQ3LWZkYzE2NDBiYWNmZdgCBeACAQ&aid=304142&lang=sl&sb=1&src_elem=sb&src=searchresults&dest_id=-782831&dest_type=city&ac_position=0&ac_click_type=b&ac_langcode=en&ac_suggestion_list_length=5&search_selected=true&search_pageview_id=25678b08c77c002c&ac_meta=GhAyNTY3OGIwOGM3N2MwMDJjIAAoATICZW46BWR1YmFpQABKAFAA&group_adults=1&no_rooms=1&group_children=0" target="_blank" class="btn btn-primary">Visit Dubai</a>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-4">
+        <a href="Paris.html">
+          <div class="card mb-4">
+            <img src="Paris.jpg" alt="rentacar" style="width:348px;height:150px;">
+            <div class="card-body">
+              <h5 class="card-title">Paris</h5>
+              <p class="card-text">Paris, the City of Love, enchants visitors with its romantic ambiance and timeless beauty.</p>
+              <a href="https://www.booking.com/searchresults.sl.html?ss=Paris%2C+Ile+de+France%2C+France&ssne=Dubaj&ssne_untouched=Dubaj&efdco=1&label=gen173nr-1BCAEoggI46AdIM1gEaMsBiAEBmAEjuAEXyAEM2AEB6AEBiAIBqAIDuAKnsKikBsACAdICJGI4NWVhMDhkLTQwYzYtNDIxYS1hNDQ3LWZkYzE2NDBiYWNmZdgCBeACAQ&aid=304142&lang=sl&sb=1&src_elem=sb&src=searchresults&dest_id=-1456928&dest_type=city&ac_position=0&ac_click_type=b&ac_langcode=en&ac_suggestion_list_length=5&search_selected=true&search_pageview_id=d02f8bc8b0c9045d&ac_meta=GhBkMDJmOGJjOGIwYzkwNDVkIAAoATICZW46BXBhcmlzQABKAFAA&group_adults=1&no_rooms=1&group_children=0" target="_blank" class="btn btn-primary">Visit Paris</a>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Noga -->
+  <footer class="footer text-center py-3 bg-light">
+    <div class="container">
+      <span class="text-muted">&copy; 2023 TTravel. All rights reserved.</span>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net"></script>
+</body>
+</html>

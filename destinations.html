@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>TTravel</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    /* CSS Styles for Destinations */
+    .destinations {
+      background-color: #f2f2f2;
+      padding: 50px 0;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 15px;
+    }
+
+    h2 {
+      font-size: 2.5rem;
+      margin-bottom: 30px;
+    }
+
+    .destination-card {
+      display: flex;
+      align-items: center;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    .destination-card img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      margin-right: 20px;
+      border-radius: 8px;
+    }
+
+    .destination-info {
+      flex: 1;
+    }
+
+    .destination-info h3 {
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+    }
+
+    .destination-info p {
+      font-size: 1.2rem;
+      margin-bottom: 15px;
+    }
+
+    /* CSS Styles for Tables */
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    th, td {
+      padding: 10px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+
+    th {
+      background-color: #2196F3;
+      color: #fff;
+    }
+
+    /* Style the TTravel logo */
+    .ttravel-logo {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      color: #3454d1;
+      font-size: 1.5rem;
+      text-decoration: none;
+      z-index: 9999;
+    }
+
+    .ttravel-logo:hover {
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <a href="index.html" class="ttravel-logo">TTravel</a>
+
+  <!-- Destinations Section -->
+  <section class="destinations">
+    <div class="container">
+      <h2>Explore our top destinations and start planning your next trip.</h2>
+
+      <div class="destination-card">
+        <img src="barcelona.jpg" alt="Barcelona">
+        <div class="destination-info">
+          <h3>Barcelona, Spain</h3>
+          <p>Barcelona, the vibrant capital of Catalonia, is famous for its unique architecture, including the renowned Sagrada Familia.</p>
+          <a href="https://www.booking.com/searchresults.sl.html?ss=Barcelona%2C+Catalonia%2C+Spain&ssne=Rim&ssne_untouched=Rim&efdco=1&label=gen173nr-1BCAEoggI46AdIM1gEaMsBiAEBmAEjuAEXyAEM2AEB6AEBiAIBqAIDuAKnsKikBsACAdICJGI4NWVhMDhkLTQwYzYtNDIxYS1hNDQ3LWZkYzE2NDBiYWNmZdgCBeACAQ&aid=304142&lang=sl&sb=1&src_elem=sb&src=searchresults&dest_id=-372490&dest_type=city&ac_position=0&ac_click_type=b&ac_langcode=en&ac_suggestion_list_length=5&search_selected=true&search_pageview_id=a93a8afecf3a03f3&ac_meta=GhBhOTNhOGFmZWNmM2EwM2YzIAAoATICZW46BWJhcmNlQABKAFAA&group_adults=1&no_rooms=1&group_children=0" target="_blank" class="btn btn-primary">Visit Barcelona</a>
+        </div>
+      </div>
+
+      <div class="destination-card">
+        <img src="rome.jpg" alt="Rome">
+        <div class="destination-info">
+          <h3>Rome, Italy</h3>
+          <p>Rome, the Eternal City, is home to iconic landmarks such as the Colosseum, the Roman Forum, and the Vatican City.</p>
+          <a href="https://www.booking.com/searchresults.sl.html?ss=Rome%2C+Lazio%2C+Italy&ssne=Portoro%C5%BE&ssne_untouched=Portoro%C5%BE&efdco=1&label=gen173nr-1BCAEoggI46AdIM1gEaMsBiAEBmAEjuAEXyAEM2AEB6AEBiAIBqAIDuAKnsKikBsACAdICJGI4NWVhMDhkLTQwYzYtNDIxYS1hNDQ3LWZkYzE2NDBiYWNmZdgCBeACAQ&aid=304142&lang=sl&sb=1&src_elem=sb&src=searchresults&dest_id=-126693&dest_type=city&ac_position=0&ac_click_type=b&ac_langcode=en&ac_suggestion_list_length=5&search_selected=true&search_pageview_id=632d8af9a52a009a&ac_meta=GhA2MzJkOGFmOWE1MmEwMDlhIAAoATICZW46BHJvbWVAAEoAUAA%3D&group_adults=1&no_rooms=1&group_children=0" target="_blank" class="btn btn-primary">Visit Rome</a>
+        </div>
+      </div>
+
+      <div class="destination-card">
+        <img src="tokyo.jpg" alt="Tokyo">
+        <div class="destination-info">
+          <h3>Tokyo, Japan</h3>
+          <p>Tokyo, the bustling capital of Japan, offers a fascinating blend of traditional and modern attractions, from ancient temples to high-tech skyscrapers.</p>
+          <a href="https://www.booking.com/searchresults.sl.html?ss=Tokyo%2C+Tokyo-to%2C+Japan&ssne=New+York&ssne_untouched=New+York&efdco=1&label=gen173nr-1BCAEoggI46AdIM1gEaMsBiAEBmAEjuAEXyAEM2AEB6AEBiAIBqAIDuAKnsKikBsACAdICJGI4NWVhMDhkLTQwYzYtNDIxYS1hNDQ3LWZkYzE2NDBiYWNmZdgCBeACAQ&aid=304142&lang=sl&sb=1&src_elem=sb&src=searchresults&dest_id=-246227&dest_type=city&ac_position=0&ac_click_type=b&ac_langcode=en&ac_suggestion_list_length=5&search_selected=true&search_pageview_id=c0288ae266a00066&ac_meta=GhBjMDI4OGFlMjY2YTAwMDY2IAAoATICZW46BXRva3lvQABKAFAA&group_adults=1&no_rooms=1&group_children=0" target="_blank" class="btn btn-primary">Visit Tokyo</a>
+        </div>
+      </div>
+
+      <div class="destination-card">
+        <img src="newyork.jpg" alt="New York">
+        <div class="destination-info">
+          <h3>New York City, USA</h3>
+          <p>New York City, the city that never sleeps, is renowned for its iconic landmarks like Times Square, Central Park, and the Statue of Liberty.</p>
+          <a href="https://www.booking.com/searchresults.sl.html?ss=New+York%2C+New+York+State%2C+United+States&ssne=Sydney&ssne_untouched=Sydney&efdco=1&label=gen173nr-1BCAEoggI46AdIM1gEaMsBiAEBmAEjuAEXyAEM2AEB6AEBiAIBqAIDuAKnsKikBsACAdICJGI4NWVhMDhkLTQwYzYtNDIxYS1hNDQ3LWZkYzE2NDBiYWNmZdgCBeACAQ&aid=304142&lang=sl&sb=1&src_elem=sb&src=searchresults&dest_id=20088325&dest_type=city&ac_position=0&ac_click_type=b&ac_langcode=en&ac_suggestion_list_length=5&search_selected=true&search_pageview_id=8d118ad1d0990054&ac_meta=GhA4ZDExOGFkMWQwOTkwMDU0IAAoATICZW46A25ld0AASgBQAA%3D%3D&group_adults=1&no_rooms=1&group_children=0" target="_blank" class="btn btn-primary">Visit New York</a>
+        </div>
+      </div>
+
+      <div class="destination-card">
+        <img src="sydney.jpg" alt="Sydney">
+        <div class="destination-info">
+          <h3>Sydney, Australia</h3>
+          <p>Sydney, the harbor city, offers stunning views of the Sydney Opera House and the Harbour Bridge, along with beautiful beaches.</p>
+          <a href="https://www.booking.com/searchresults.sl.html?ss=Sydney%2C+New+South+Wales%2C+Australia&ssne=Kairo&ssne_untouched=Kairo&efdco=1&label=gen173nr-1BCAEoggI46AdIM1gEaMsBiAEBmAEjuAEXyAEM2AEB6AEBiAIBqAIDuAKnsKikBsACAdICJGI4NWVhMDhkLTQwYzYtNDIxYS1hNDQ3LWZkYzE2NDBiYWNmZdgCBeACAQ&aid=304142&lang=sl&sb=1&src_elem=sb&src=searchresults&dest_id=-1603135&dest_type=city&ac_position=0&ac_click_type=b&ac_langcode=en&ac_suggestion_list_length=5&search_selected=true&search_pageview_id=6eda8abf7efb020c&ac_meta=GhA2ZWRhOGFiZjdlZmIwMjBjIAAoATICZW46BXN5ZG5lQABKAFAA&group_adults=1&no_rooms=1&group_children=0" target="_blank" class="btn btn-primary">Visit Sydney</a>
+        </div>
+      </div>
+
+      <div class="destination-card">
+        <img src="cairo.jpg" alt="Cairo">
+        <div class="destination-info">
+          <h3>Cairo, Egypt</h3>
+          <p>Cairo, the capital of Egypt, is home to ancient wonders like the Pyramids of Giza and the Sphinx, showcasing the rich history of the region.</p>
+          <a href="https://www.booking.com/searchresults.sl.html?ss=Cairo%2C+Cairo+Governorate%2C+Egypt&ssne=Portoro%C5%BE&ssne_untouched=Portoro%C5%BE&efdco=1&label=gen173nr-1BCAEoggI46AdIM1gEaMsBiAEBmAEjuAEXyAEM2AEB6AEBiAIBqAIDuAKnsKikBsACAdICJGI4NWVhMDhkLTQwYzYtNDIxYS1hNDQ3LWZkYzE2NDBiYWNmZdgCBeACAQ&aid=304142&lang=sl&sb=1&src_elem=sb&src=searchresults&dest_id=-290692&dest_type=city&ac_position=0&ac_click_type=b&ac_langcode=en&ac_suggestion_list_length=5&search_selected=true&search_pageview_id=a5848ab8f9bf00b3&ac_meta=GhBhNTg0OGFiOGY5YmYwMGIzIAAoATICZW46BWNhaXJvQABKAFAA&group_adults=1&no_rooms=1&group_children=0" target="_blank" class="btn btn-primary">Visit Cairo</a>
+        </div>
+      </div>
+
+      <div class="destination-card">
+        <img src="rio.jpg" alt="Rio de Janeiro">
+        <div class="destination-info">
+          <h3>Rio de Janeiro, Brazil</h3>
+          <p>Rio de Janeiro, known for its stunning beaches and vibrant Carnival celebrations, offers breathtaking views from the iconic Christ the Redeemer statue.</p>
+          <a href="https://www.booking.com/searchresults.sl.html?ss=Rio+de+Janeiro&ssne=Rio+de+Janeiro&ssne_untouched=Rio+de+Janeiro&label=gen173nr-1BCAEoggI46AdIM1gEaMsBiAEBmAEjuAEXyAEM2AEB6AEBiAIBqAIDuAKnsKikBsACAdICJGI4NWVhMDhkLTQwYzYtNDIxYS1hNDQ3LWZkYzE2NDBiYWNmZdgCBeACAQ&aid=304142&lang=sl&sb=1&src_elem=sb&src=searchresults&dest_id=-666610&dest_type=city&group_adults=1&no_rooms=1&group_children=0" target="_blank" class="btn btn-primary">Visit Rio de Janeiro</a>
+        </div>
+      </div>
+	<h3>Destination Statistics</h3>
+    <table>
+      <tr>
+        <th>Destination</th>
+        <th>Visitors</th>
+        <th>Rating</th>
+      </tr>
+      <tr>
+        <td>Barcelona, Spain</td>
+        <td>9,500,000</td>
+        <td>4.7</td>
+      </tr>
+      <tr>
+        <td>Rome, Italy</td>
+        <td>8,000,000</td>
+        <td>4.6</td>
+      </tr>
+      <tr>
+        <td>Tokyo, Japan</td>
+        <td>12,000,000</td>
+        <td>4.7</td>
+      </tr>
+      <tr>
+        <td>New York City, USA</td>
+        <td>15,000,000</td>
+        <td>4.9</td>
+      </tr>
+      <tr>
+        <td>Sydney, Australia</td>
+        <td>6,500,000</td>
+        <td>4.8</td>
+      </tr>
+      <tr>
+        <td>Cairo, Egypt</td>
+        <td>5,000,000</td>
+        <td>4.5</td>
+      </tr>
+      <tr>
+        <td>Rio de Janeiro, Brazil</td>
+        <td>7,200,000</td>
+        <td>4.7</td>
+      </tr>
+      <!-- Add more rows here -->
+    </table>
+    </div>
+  </section>
+
+</body>
+</html>
